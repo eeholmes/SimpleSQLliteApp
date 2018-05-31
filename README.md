@@ -17,7 +17,8 @@ You can use RStudio's https://www.shinyapps.io/ service for free.  Make an accou
 
 Because your dataset  is really huge and you do
 want to load that into your R session.  In my simple tests, querying a SQLlite database was not slower than having the whole dataset
-in memory.
+in memory.  Another reason would be if you want to have your database somewhere other than local.  Maybe you want to host your 
+database on Amazon (say) and be able to query it from many different apps or from a browser.  If you need to query your database often in your app, that hosting remotely might add a lot of overhead.
 
 How to set up a SQLlite database?  Super easy. Make sure you do this in the same directory as you shiny app (or if not just add 
 the right path to whereever you store the database file).
