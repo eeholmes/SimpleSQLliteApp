@@ -61,7 +61,7 @@ In a shiny app, you will want to create a query string from variables.
                     "where cyl in ( ",  paste(cyl, collapse=", ")," )",
                     " and carb=",carb)
     sqldf(query, dbname="database.db")
-``
+```
 Search online for tutorials on SQLlite query syntax.  The basics are pretty easy.  The complicated is quite complicated but
 simple is dead easy.  Be careful about quotes in your csv file.  `write.csv()` will put quotes around your text by default and
 that will make it a real pain to write queries since you have to add `\"` everywhere.  So use `quote=FALSE` to stop that.
@@ -69,4 +69,21 @@ that will make it a real pain to write queries since you have to add `\"` everyw
 Note there are a few different packages you can use to interact with your database.  I used `sqldf` and its functions because
 it was the easy.  Some people have had trouble with `dbWriteTable()` function.  `sqldf` has another one you can use (google it). 
 But I had trouble with that and `dbWriteTable()` worked fine.
+
+## References
+
+The following are online tutorials that I used to get started.  
+There are 3 different methods for getting a csv file into a SQLlite database in these links.  I chose the one I did since it worked seamlessly for me.
+
+
+https://www.r-bloggers.com/r-and-sqlite-part-1/amp/
+
+http://tiffanytimbers.com/querying-sqlite-databases-from-r/
+
+http://tiffanytimbers.com/building-a-basic-database-from-csv-files-using-sqlite3/
+
+https://www.tutorialspoint.com/sqlite/sqlite_where_clause.htm
+
+https://shiny.rstudio.com/articles/persistent-data-storage.html#sqlite
+
 

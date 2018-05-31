@@ -9,9 +9,6 @@
 
 library(shiny)
 library(ggplot2)
-library(gridExtra)
-library(grid)
-library(stringr)
 library(sqldf)
 library(stargazer)
 
