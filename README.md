@@ -1,7 +1,21 @@
 # SimpleSQLliteApp
 
 This is a super simple app that shows how to link a SQLlite database to a shiny app.  SQLlite is installed on shinyapps.io
-so if you use that to deliver apps, then you are set.  Why use a database?  Because whatever you have is really huge and you do
+so if you use that to deliver apps, then you are set.  
+
+## How to run the app
+
+Install the sqldf package.  That'll install SQLlite.  You do not have to install anything else for the database part.  Install the shiny package.  The app uses also uses ggplot2 and stargazer packages, so install those too.
+
+Save the 2 files somewhere and set your working directory to whatever directory those files are in.  Open up `app.R` in RStudio.  You should see a **Run App** link at the top of the file.  Click that and it should run.  
+
+## Sharing a shiny app with other people
+
+You can use RStudio's https://www.shinyapps.io/ service for free.  Make an account.  Then click on Dashboard and it'll walk you through how to connect your account to RStudio.
+
+## Why use a database?
+
+Because your dataset  is really huge and you do
 want to load that into your R session.  In my simple tests, querying a SQLlite database was not slower than having the whole dataset
 in memory.
 
