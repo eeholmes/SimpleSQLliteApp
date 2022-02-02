@@ -89,5 +89,5 @@ https://shiny.rstudio.com/articles/persistent-data-storage.html#sqlite
 
 ## Reuse statement
 
-Reuse and adapt this repo however you want. Attribution is great, like I did in references, but not required.
+Reuse and adapt this repo however you want. Attribution is great, like I did in references, but not required. License: CC0 1.0 Universal
 
