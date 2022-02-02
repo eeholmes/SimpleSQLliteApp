@@ -87,3 +87,7 @@ https://www.tutorialspoint.com/sqlite/sqlite_where_clause.htm
 https://shiny.rstudio.com/articles/persistent-data-storage.html#sqlite
 
 
+## Reuse statement
+
+Reuse and adapt this repo however you want. Attribution is great, like I did in references, but not required.
+
